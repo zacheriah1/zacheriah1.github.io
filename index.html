@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--meta tags-->
+  <meta charset="utf-8">
+  <meta name="description" content="horror games from the early 2000's">
+  <!--styling-->
+  <link rel="stylesheet" href="assets/style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/cabd6e0130.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <title>QUIZ GIBBLY</title>
+</head>
+
+<body>
+  <main>
+    <h1><i class="fa-regular fa-circle-question"></i> Welcome to Quiz Gibbly <i class="fa-regular fa-circle-question"></i></h1>
+    <div class="main">
+      <div class="name-prompt">
+        <h2>Please enter your name:</h2>
+        <div class="form-container">
+          <form class="name-prompt-form" name="name-prompt-form" id="namePromptForm">
+
+            <input type="text" placeholder="6-20 characters" maxlength="20" minLength="6" id="name" name="name"><br>
+            <div class="submit-btn-container"><button type="submit">Submit <i class="fa-solid fa-arrow-right"></i></button></div>
+          </form>
+        </div>
+      </div>
+      <div class="start-btn-container"><button disabled id="startQuizBtn">Start Quiz <i class="fa-solid fa-pencil"></i></button></div>
+    </div>
+    <div class="quiz-modal">
+      <div class="quiz-container">
+        <h2 id="questionNumber">Question Number</h2>
+        <div class="question-container">
+
+          <p id="question">Question</p>
+        </div>
+        <div class="answers-container">
+          <div class="row">
+            <button class="answer-button">Answer 1 </button>
+            <button class="answer-button">Answer 2 </button>
+          </div>
+          <div class="row">
+            <button class="answer-button">Answer 3 </button>
+            <button class="answer-button">Answer 4 </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="results-modal">
+      <div class="results-container">
+        <h2 id="resultHeading">Results</h2>
+        <div class="score-container">
+
+          <img src="assets/images/ultimate.png" alt="result-image" id="result" class="result">
+        </div>
+        <div class="restart-container">
+
+          <div class="row">
+            <button class="restart-button" id="restartButton">Restart Quiz </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="assets/js/quiz.js"></script>
+</body>
+
+</html>
